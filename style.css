@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+[class*="square"] {
+    width: 100px;
+    height: 100px;
+    background-color: #cecdcd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10%;
+    display: flex;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #434242;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.first-square {
+    align-items: center;
+    justify-content: center;
+}
+
+.second-square, 
+.third-square,
+.fourth-square,
+.fifth-square, 
+.sixth-square {
+    justify-content: space-between;
+}
+
+.second-square .circle:last-child, 
+.third-square .circle:last-child {
+    align-self: flex-end;
+}
+
+.third-square .circle:nth-child(2) {
+    align-self: center;
+}
+
+.fourth-square .col,
+.fifth-square .col,
+.sixth-square .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth-square .col:nth-child(2) {
+    justify-content: center;
+}
